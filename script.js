@@ -161,7 +161,7 @@
 
 function game() {
 }
-let userChoice = prompt("Що вибираєте: камінь, ножниці чи бумагу?").toLowerCase();//Метод toLowerCase()перетворює рядок на малі літери.
+let userChoice = prompt("Що вибираєте: камінь, ножниці чи бумага?").toLowerCase();//Метод toLowerCase()перетворює рядок на малі літери.
 let computerChoice = Math.random();
 
 if (computerChoice < 0.34) {
@@ -172,12 +172,12 @@ if (computerChoice < 0.34) {
     computerChoice = "ножниці";
 }
 
-document.write("<p>Ваш выбір: " + userChoice + "</p>");
+document.write("<p>Ваш вибір: " + userChoice + "</p>");
 document.write("<p>Вибір компьютера: " + computerChoice + "</p><br>");
 
 var compare = function (choice1, choice2) {
   if (choice1 === choice2) {
-    document.write("Нічья!");
+    document.write("Нічия!");
   } else if (choice1 === "камінь") {
     if (choice2 === "ножниці") {
       document.write("Ви перемогли.");
@@ -187,17 +187,17 @@ var compare = function (choice1, choice2) {
     }
   } else if (choice1 === "бумага") {
     if (choice2 === "камінь") {
-      document.write("Ви перемогли");
+      document.write("Ви перемогли.");
     }
-    else if (choice2 === "ножницы") {
+    else if (choice2 === "ножниці") {
       document.write("Ви програли.");
     }
-  } else if (choice1 === "ножницы") {
-    if (choice2 === "камень") {
+  } else if (choice1 === "ножниці") {
+    if (choice2 === "камінь") {
       document.write("Ви програли.");
     }
     else if (choice2 === "бумага") {
-      document.write("Ви перемогли");
+      document.write("Ви перемогли.");
     }
   }
 } 
